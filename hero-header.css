@@ -17,6 +17,7 @@
 
 body {
   margin: 0;
+  font-family: "Titan One", sans-serif;
 }
 
 .header {
@@ -46,6 +47,160 @@ body {
     height: 665px;
     width: 1200px;
     padding: 0px 75px;
+  }
+}
+.header__caption {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  left: 20px;
+  bottom: 203px;
+  z-index: 3;
+}
+@media screen and (min-width: 1200px) {
+  .header__caption {
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
+.header__caption--enlarge {
+  font-size: 48px;
+  line-height: 46px;
+  color: #d41443;
+}
+@media screen and (min-width: 1200px) {
+  .header__caption--enlarge {
+    font-size: 58px;
+    line-height: 53px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__caption {
+    left: 34px;
+    bottom: 217px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__caption {
+    left: 115px;
+    bottom: 357px;
+  }
+}
+.header__counter {
+  display: none;
+  z-index: 2;
+}
+.header__counter::after {
+  display: block;
+  content: " ";
+  border: 0px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .header__counter::after {
+    width: 16px;
+    height: 16px;
+    right: -10px;
+    top: -1px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__counter::after {
+    width: 30px;
+    height: 30px;
+    right: -18px;
+    top: -2px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__counter {
+    display: block;
+    font-family: "Titan One";
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #d41443;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__counter {
+    font-size: 46px;
+    line-height: 53px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__counter--cafes {
+    position: absolute;
+    right: 44px;
+    bottom: 271px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__counter--cafes {
+    right: 115px;
+    bottom: 452px;
+  }
+}
+.header__counter--cafes::before {
+  content: "cafes";
+  display: block;
+  font-family: "DM Sans";
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .header__counter--cafes::before {
+    font-size: 14px;
+    line-height: 18px;
+    bottom: -18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__counter--trucks {
+    position: absolute;
+    right: 44px;
+    bottom: 215px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__counter--trucks {
+    right: 115px;
+    bottom: 361px;
+  }
+}
+.header__counter--trucks::before {
+  content: "food tracks";
+  display: block;
+  width: 120px;
+  font-family: "DM Sans";
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .header__counter--trucks::before {
+    font-size: 14px;
+    line-height: 18px;
+    bottom: -18px;
   }
 }
 .header__milk-jug-img {
@@ -86,6 +241,7 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     overflow: hidden;
+    z-index: 3;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -93,5 +249,57 @@ body {
     width: 293px;
     height: 232px;
     right: 69px;
+  }
+}
+.header__icecream-img {
+  position: absolute;
+  width: 171px;
+  height: 410px;
+  bottom: 0px;
+  right: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .header__icecream-img {
+    width: 143px;
+    height: 336px;
+    right: 247px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__icecream-img {
+    width: 236px;
+    height: 557px;
+    right: 410px;
+  }
+}
+.header__background-circle {
+  width: 346px;
+  height: 344px;
+  border: 0px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+  position: absolute;
+  bottom: 75px;
+  right: -62px;
+  z-index: 0;
+}
+@media screen and (min-width: 768px) {
+  .header__background-circle {
+    width: 324px;
+    height: 322px;
+    right: 137px;
+    bottom: 46px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__background-circle {
+    width: 538px;
+    height: 538px;
+    right: 227px;
+    bottom: 75px;
   }
 }/*# sourceMappingURL=hero-header.css.map */
