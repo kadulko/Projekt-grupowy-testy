@@ -1,0 +1,86 @@
+:root {
+  --pink-color: #ffb8ca;
+  --menu-color: #ffb8ca;
+  --text: #ffa5ba;
+  --text-color: #000000;
+  --secondary-text-color: #907e82;
+  --white-color: #ffffff;
+  --red-color: #d41443;
+  --background-pink-color: #fff5f6;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: var(--pink-color);
+  width: 100vw;
+
+  &__container {
+    width: 100%;
+    height: 502px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    position: relative;
+
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 399px;
+      width: 768px;
+      padding: 0px 34px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 665px;
+      width: 1200px;
+      padding: 0px 75px;
+    }
+  }
+
+  &__milk-jug-img {
+    position: absolute;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 124px;
+      height: 126px;
+      bottom: 28px;
+      left: 34px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 188px;
+      height: 191px;
+      bottom: 45px;
+      left: 37px;
+    }
+  }
+
+  &__icecream-girl-img {
+    position: absolute;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 168px;
+      height: 133px;
+      bottom: 0px;
+      right: 34px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 293px;
+      height: 232px;
+      right: 69px;
+    }
+  }
+}
