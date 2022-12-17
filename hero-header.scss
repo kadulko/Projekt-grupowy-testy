@@ -22,6 +22,7 @@ body {
 
 .header {
   background-color: var(--pink-color);
+  overflow: hidden;
 
   &__container {
     width: 100vw;
