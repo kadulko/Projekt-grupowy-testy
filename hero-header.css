@@ -51,6 +51,7 @@ body {
   }
 }
 .header__caption {
+  margin: 0;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -64,10 +65,20 @@ body {
   bottom: 203px;
   z-index: 3;
 }
+@media screen and (min-width: 768px) {
+  .header__caption {
+    left: 34px;
+    bottom: 217px;
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header__caption {
     font-size: 38px;
     line-height: 44px;
+    left: 115px;
+    bottom: 357px;
   }
 }
 .header__caption--enlarge {
@@ -75,22 +86,16 @@ body {
   line-height: 46px;
   color: #d41443;
 }
+@media screen and (min-width: 768px) {
+  .header__caption--enlarge {
+    font-size: 34px;
+    line-height: 31px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header__caption--enlarge {
     font-size: 58px;
     line-height: 53px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__caption {
-    left: 34px;
-    bottom: 217px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__caption {
-    left: 115px;
-    bottom: 357px;
   }
 }
 .header__counter {
