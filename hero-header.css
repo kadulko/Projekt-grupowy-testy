@@ -314,17 +314,34 @@ body {
   position: absolute;
   width: 199px;
   height: 50px;
-  left: 46px;
-  top: 37px;
+  left: 20px;
+  top: 6px;
+}
+@media screen and (min-width: 768px) {
+  .header__nav__logo {
+    left: 34px;
+    top: 37px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav__logo {
+    left: 46px;
+    top: 37px;
+  }
 }
 
 .header__list {
-  list-style-type: none;
-  display: flex;
-  gap: 35px;
-  padding-top: 35px;
-  margin-left: 250px;
-  z-index: 5;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+    padding-top: 35px;
+    margin-left: 250px;
+    z-index: 5;
+  }
 }
 
 .header__link {
@@ -346,9 +363,13 @@ body {
 .header__nav-btn {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header__nav-btn {
     display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav-btn {
     position: absolute;
     width: 159px;
     height: 44px;
@@ -361,5 +382,22 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__burger-btn {
+    display: flex;
+    position: absolute;
+    width: 20px;
+    height: 12px;
+    left: 524px;
+    top: 52px;
+    opacity: 0.2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__burger-btn {
+    display: none;
   }
 }/*# sourceMappingURL=hero-header.css.map */
