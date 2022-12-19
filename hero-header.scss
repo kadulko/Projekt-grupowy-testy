@@ -295,6 +295,11 @@ body {
 .header__nav {
   display: flex;
   align-items: center;
+  // position: absolute;
+  top: 6px;
+  @media screen and (min-width: 768px) {
+    top: 36px;
+  }
 }
 .header__nav__logo {
   position: absolute;
@@ -344,13 +349,11 @@ body {
 
   @media screen and (min-width: 768px) {
     display: block;
-  }
-  @media screen and (min-width: 1200px) {
+    left: 574px;
     position: absolute;
     /* z-index: 0; */
     width: 159px;
     height: 44px;
-    left: 1006px;
     top: 38px;
     color: #d41443;
     border-radius: 22px;
@@ -359,20 +362,22 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 1006px;
   }
 }
 
 .header__burger-btn {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    position: absolute;
-    width: 20px;
-    height: 12px;
-    left: 524px;
-    top: 52px;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 12px;
+  left: 524px;
+  top: 52px;
 
-    opacity: 0.2;
-  }
+  opacity: 0.2;
 
   @media screen and (min-width: 1200px) {
     display: none;
