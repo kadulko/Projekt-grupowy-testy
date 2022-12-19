@@ -94,6 +94,130 @@ body {
     }
   }
 
+  &__button {
+    height: 24px;
+    border-radius: 20px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    border: none;
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &--dark {
+      color: #ffffff;
+      background: #d41443;
+      width: 63px;
+      position: absolute;
+      left: 20px;
+      bottom: 160px;
+      &:hover,
+      &:focus {
+        background: #c7133e;
+      }
+
+      @media screen and (min-width: 768px) {
+        left: 34px;
+        bottom: 173px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        left: 115px;
+        bottom: 292px;
+        width: 102px;
+        height: 40px;
+      }
+    }
+
+    &--white {
+      color: #d41443;
+      background: #ffffff;
+      width: 83px;
+      position: absolute;
+      left: 90px;
+      bottom: 160px;
+      margin: 0px;
+      &:hover,
+      &:focus {
+        background: #ecebeb;
+      }
+
+      @media screen and (min-width: 768px) {
+        left: 105px;
+        bottom: 173px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        left: 234px;
+        bottom: 292px;
+        width: 138px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__text {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 114px;
+      height: 48px;
+      position: absolute;
+      left: 154px;
+      bottom: 59px;
+      font-family: "DM Sans";
+      font-size: 8px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 200px;
+      height: 78px;
+      left: 255px;
+      bottom: 102px;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  &__text-btn {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 18px;
+      height: 18px;
+      border: none;
+      position: absolute;
+      left: 154px;
+      bottom: 34px;
+      cursor: pointer;
+      background: url(./img/arrow/arrow-right.png);
+      background-size: cover;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(./img/arrow/arrow-right@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 26px;
+      height: 26px;
+      left: 255px;
+      bottom: 56px;
+    }
+  }
+
   &__counter {
     display: none;
     z-index: 2;

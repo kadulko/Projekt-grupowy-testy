@@ -98,6 +98,131 @@ body {
     line-height: 53px;
   }
 }
+.header__button {
+  height: 24px;
+  border-radius: 20px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .header__button {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.header__button--dark {
+  color: #ffffff;
+  background: #d41443;
+  width: 63px;
+  position: absolute;
+  left: 20px;
+  bottom: 160px;
+}
+.header__button--dark:hover, .header__button--dark:focus {
+  background: #c7133e;
+}
+@media screen and (min-width: 768px) {
+  .header__button--dark {
+    left: 34px;
+    bottom: 173px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__button--dark {
+    left: 115px;
+    bottom: 292px;
+    width: 102px;
+    height: 40px;
+  }
+}
+.header__button--white {
+  color: #d41443;
+  background: #ffffff;
+  width: 83px;
+  position: absolute;
+  left: 90px;
+  bottom: 160px;
+  margin: 0px;
+}
+.header__button--white:hover, .header__button--white:focus {
+  background: #ecebeb;
+}
+@media screen and (min-width: 768px) {
+  .header__button--white {
+    left: 105px;
+    bottom: 173px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__button--white {
+    left: 234px;
+    bottom: 292px;
+    width: 138px;
+    height: 40px;
+  }
+}
+.header__text {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__text {
+    display: block;
+    width: 114px;
+    height: 48px;
+    position: absolute;
+    left: 154px;
+    bottom: 59px;
+    font-family: "DM Sans";
+    font-size: 8px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__text {
+    width: 200px;
+    height: 78px;
+    left: 255px;
+    bottom: 102px;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+.header__text-btn {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__text-btn {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: none;
+    position: absolute;
+    left: 154px;
+    bottom: 34px;
+    cursor: pointer;
+    background: url(./img/arrow/arrow-right.png);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .header__text-btn {
+    background-image: url(./img/arrow/arrow-right@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__text-btn {
+    width: 26px;
+    height: 26px;
+    left: 255px;
+    bottom: 56px;
+  }
+}
 .header__counter {
   display: none;
   z-index: 2;
