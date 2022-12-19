@@ -308,6 +308,12 @@ body {
 .header__nav {
   display: flex;
   align-items: center;
+  top: 6px;
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    top: 36px;
+  }
 }
 
 .header__nav__logo {
@@ -317,11 +323,14 @@ body {
   left: 20px;
   top: 6px;
 }
+@media screen and (min-width: 768px) {
+  .header__nav__logo {
+    left: 34px;
+    top: 37px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header__nav__logo {
-    position: absolute;
-    width: 199px;
-    height: 50px;
     left: 46px;
     top: 37px;
   }
@@ -360,14 +369,14 @@ body {
 .header__nav-btn {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header__nav-btn {
     display: block;
+    left: 574px;
     position: absolute;
     /* z-index: 0; */
     width: 159px;
     height: 44px;
-    left: 1006px;
     top: 38px;
     color: #d41443;
     border-radius: 22px;
@@ -376,5 +385,26 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav-btn {
+    left: 1006px;
+  }
+}
+
+.header__burger-btn {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 12px;
+  left: 524px;
+  top: 52px;
+  opacity: 0.2;
+}
+@media screen and (min-width: 1200px) {
+  .header__burger-btn {
+    display: none;
   }
 }/*# sourceMappingURL=hero-header.css.map */
