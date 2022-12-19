@@ -324,6 +324,7 @@ body {
   gap: 35px;
   padding-top: 35px;
   margin-left: 250px;
+  z-index: 5;
 }
 
 .header__link {
@@ -349,7 +350,6 @@ body {
   .header__nav-btn {
     display: block;
     position: absolute;
-    /* z-index: 0; */
     width: 159px;
     height: 44px;
     left: 1006px;
