@@ -206,13 +206,13 @@ body {
       left: 154px;
       bottom: 34px;
       cursor: pointer;
-      background: url(./img/arrow/arrow-right.png);
+      background: url(./images/hero/arrow/arrow-right.png);
       background-size: cover;
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(./img/arrow/arrow-right@2x.png);
+        background-image: url(./images/hero/arrow/arrow-right@2x.png);
       }
     }
 
