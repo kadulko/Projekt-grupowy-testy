@@ -1,13 +1,18 @@
-:root {
-  --pink-color: #ffb8ca;
-  --menu-color: #ffb8ca;
-  --text: #ffa5ba;
-  --text-color: #000000;
-  --secondary-text-color: #907e82;
-  --white-color: #ffffff;
-  --red-color: #d41443;
-  --background-pink-color: #fff5f6;
-}
+$main-font: "DM Sans", sans-serif;
+$secondary-font: "Titan One", cursive;
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #fff5f6;
+$hero-header-bg: #ffb8ca;
+$primary-text-color: #000000;
+$secondary-text-color: #907e82;
+$primary-accent-color: #d41443;
+$secondary-accent-color: #ffa5ba;
+$menu-text-color: #ffffff;
+$hover-button-primary-color: #c7133e;
+$hover-button-menu-color: #ecebeb;
+$second-card-color: #f0d1a5;
+$third-card-color: #c2e297;
+$modal-bg-color: #e17992;
 
 *,
 *::before,
@@ -17,11 +22,11 @@
 
 body {
   margin: 0;
-  font-family: "Titan One", sans-serif;
+  font-family: " $secondary-font", sans-serif;
 }
 
 .header {
-  background-color: var(--pink-color);
+  background-color: $hero-header-bg;
   overflow: hidden;
 
   &__container {
@@ -50,14 +55,14 @@ body {
 
   &__caption {
     margin: 0;
-    font-family: "Titan One";
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
     line-height: 30px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $menu-text-color;
     position: absolute;
     left: 20px;
     bottom: 203px;
@@ -80,7 +85,7 @@ body {
     &--enlarge {
       font-size: 48px;
       line-height: 46px;
-      color: #d41443;
+      color: $primary-accent-color;
 
       @media screen and (min-width: 768px) {
         font-size: 34px;
@@ -97,13 +102,14 @@ body {
   &__button {
     height: 24px;
     border-radius: 20px;
-    font-family: "DM Sans";
+    font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 10px;
     border: none;
     cursor: pointer;
+    z-index: 3;
 
     @media screen and (min-width: 1200px) {
       font-size: 14px;
@@ -111,8 +117,8 @@ body {
     }
 
     &--dark {
-      color: #ffffff;
-      background: #d41443;
+      color: $menu-text-color;
+      background: $primary-accent-color;
       width: 63px;
       position: absolute;
       left: 20px;
@@ -136,8 +142,8 @@ body {
     }
 
     &--white {
-      color: #d41443;
-      background: #ffffff;
+      color: $primary-accent-color;
+      background: $primary-bg-color;
       width: 83px;
       position: absolute;
       left: 90px;
@@ -145,7 +151,7 @@ body {
       margin: 0px;
       &:hover,
       &:focus {
-        background: #ecebeb;
+        background: $hover-button-menu-color;
       }
 
       @media screen and (min-width: 768px) {
@@ -172,10 +178,10 @@ body {
       position: absolute;
       left: 154px;
       bottom: 59px;
-      font-family: "DM Sans";
+      font-family: $main-font;
       font-size: 8px;
       line-height: 150%;
-      color: #ffffff;
+      color: $menu-text-color;
     }
 
     @media screen and (min-width: 1200px) {
@@ -227,7 +233,7 @@ body {
       content: " ";
       border: 0px;
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: $primary-bg-color;
       position: absolute;
       z-index: -1;
 
@@ -248,12 +254,12 @@ body {
 
     @media screen and (min-width: 768px) {
       display: block;
-      font-family: "Titan One";
+      font-family: $secondary-font;
       font-size: 28px;
       line-height: 32px;
       text-align: right;
       letter-spacing: 0.04em;
-      color: #d41443;
+      color: $primary-accent-color;
     }
 
     @media screen and (min-width: 1200px) {
@@ -276,11 +282,11 @@ body {
       &::before {
         content: "cafes";
         display: block;
-        font-family: "DM Sans";
+        font-family: $main-font;
         font-size: 8px;
         line-height: 10px;
         text-align: right;
-        color: #ffffff;
+        color: $menu-text-color;
         position: absolute;
         bottom: -10px;
         right: 0px;
@@ -309,11 +315,11 @@ body {
         content: "food tracks";
         display: block;
         width: 120px;
-        font-family: "DM Sans";
+        font-family: $main-font;
         font-size: 8px;
         line-height: 10px;
         text-align: right;
-        color: #ffffff;
+        color: $menu-text-color;
         position: absolute;
         bottom: -10px;
         right: 0px;
@@ -399,7 +405,7 @@ body {
     height: 344px;
     border: 0px;
     border-radius: 50%;
-    background-color: #ffa5ba;
+    background-color: $secondary-accent-color;
     position: absolute;
     bottom: 75px;
     right: -62px;
@@ -461,7 +467,7 @@ body {
 }
 .header__link {
   text-decoration: none;
-  font-family: "DM Sans";
+  font-family: $main-font;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -471,7 +477,7 @@ body {
 }
 .header__link:hover,
 .header__link:focus {
-  color: #d41443;
+  color: $primary-accent-color;
 }
 .header__nav-btn {
   display: none;
@@ -483,7 +489,7 @@ body {
     width: 159px;
     height: 44px;
     top: 38px;
-    color: #d41443;
+    color: $primary-accent-color;
     border-radius: 22px;
     border-style: none;
     cursor: pointer;
