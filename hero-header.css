@@ -192,17 +192,18 @@ body {
     width: 18px;
     height: 18px;
     border: none;
+    border-radius: 50%;
     position: absolute;
     left: 154px;
     bottom: 34px;
     cursor: pointer;
-    background: url(./img/arrow/arrow-right.png);
+    background-image: url(./images/hero/arrow/arrow-right.png);
     background-size: cover;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .header__text-btn {
-    background-image: url(./img/arrow/arrow-right@2x.png);
+    background-image: url(./images/hero/arrow/arrow-right@2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
